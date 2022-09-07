@@ -112,7 +112,8 @@ return [
 
 #### Registering a listener via an attribute:
 
-The attribute can be used without additional parameters. Then the method name __invoke and the event from the type of the method parameter will be used:
+The attribute can be used without additional parameters. Then the method name `__invoke` and the event from the type
+of the method parameter will be used:
 
 ```php
 namespace App\Listener;
@@ -183,11 +184,6 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 ## Security Vulnerabilities
 
 Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## Credits
-
-- [butschster](https://github.com/spiral-packages)
-- [All Contributors](../../contributors)
 
 ## License
 
