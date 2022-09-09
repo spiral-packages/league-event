@@ -6,6 +6,7 @@ namespace Spiral\League\Event\Bootloader;
 
 use League\Event\EventDispatcher;
 use Psr\EventDispatcher\EventDispatcherInterface;
+use Psr\EventDispatcher\ListenerProviderInterface;
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Events\Bootloader\EventsBootloader;
 use Spiral\Events\ListenerRegistryInterface as SpiralListenerRegistryInterface;
@@ -22,6 +23,7 @@ final class EventBootloader extends Bootloader
         SpiralListenerRegistryInterface::class => ListenerRegistryInterface::class,
         ListenerRegistryInterface::class => ListenerRegistry::class,
         ListenerRegistry::class => ListenerRegistry::class,
+        ListenerProviderInterface::class => ListenerRegistry::class,
         EventDispatcherInterface::class => [self::class, 'initDispatcher'],
         EventDispatcher::class => EventDispatcherInterface::class
     ];
